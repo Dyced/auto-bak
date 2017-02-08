@@ -1,0 +1,14 @@
+AutoBackup Version 0.1
+
+GITHUB -  https://github.com/Dyced/auto-bak
+
+#######Config file#######
+autobackup.conf
+
+The config file will hold all variables and settings needed. If you want this to backup custom folders, they can be added in the autobackup.conf file.
+
+By default this will go to a folder in /home/ called backup.
+
+####SH script####
+
+Currently only using "tar" to compress, will retain permissions and ownership of files, and print verbose when running
