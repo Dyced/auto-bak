@@ -1,10 +1,10 @@
 #!/bin/bash
-
-#Date for filename
-DATE=`date +%Y_%m_%d`
+#
+#Script by Dyced [admin@reliahost.co]
+#Tested for Debian 8
 
 #Location of conf file
 . /etc/autobackup/autobackup.conf
 
 #backup script
-tar -pczvf $BACKUPDEST/backup-$DATE.tar.gz $BACKUPTARGET
+$ZIP_CMD $FLAG $DEST/backup-$DATE.tar.gz $TARGET
