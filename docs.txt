@@ -1,4 +1,4 @@
-AutoBackup Version 0.1
+AutoBackup Version 0.2
 
 GITHUB -  https://github.com/Dyced/auto-bak
 
@@ -11,4 +11,4 @@ By default this will go to a folder in /home/ called backup.
 
 ####SH script####
 
-Currently only using "tar" to compress, will retain permissions and ownership of files, and print verbose when running
+The variable to set your command for compression has been added, as well as a variable for flags, so there is a bit more control over what it spits out, and how it compresses.
