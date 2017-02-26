@@ -1,10 +1,11 @@
 #!/bin/bash
 #
-#Script by Dyced [admin@reliahost.co]
-#Tested for Debian 8
+##Created and only tested on debian so far
+##Scripted by Dyced [admin@reliahost.co]
 
-#Location of conf file
-. /etc/autobackup/autobackup.conf
+#Location of the Config file, by default it is the same directory.
+. /etc/autobak/autobak.conf
 
-#backup script
-$ZIP_CMD $FLAG $DEST/backup-$DATE.tar.gz $TARGET
+##Actual command being run, optional flags are set in config file.
+tar -c$FLG1$FLG2$FLG3 --recursion --file=$DEST/backup-$DATE.tar.gz $TARGET
+
