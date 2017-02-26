@@ -1,14 +1,14 @@
 # auto-bak
 Quick backup script
 
-Any variables you wish for the script to run can be set in autobackup.conf. This has only been tested on Debian 8, so no guarantee
+Any variables you wish for the script to run can be set in autobak.conf. This has only been tested on Debian 8, so no guarantee
 for anything else.
+
+$DATE is your date format for the backup files name
 
 $TARGET will set the directory you wish to backup
 
 $DEST will set where the compressed file is put
 
-$ZIP_CMD is what compression tool you are using , whether it be gzip, tar, etc.
-
-$FLAG is where you can set any flags for the script to run, by default "-pczvf"
+$FLG1,2,3 etc is the flags for the tar command, you can comment or uncomment them. You can add your own, but it may break the script
 
